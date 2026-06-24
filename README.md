@@ -209,8 +209,8 @@ http://localhost:5173
 
 ### User Validation
 
-* **Name:** 20–60 characters
-* **Address:** Maximum 400 characters
+* **Name:** 2–6 characters
+* **Address:** Maximum 40 characters
 * **Email:** Valid email format
 * **Password:** 8–16 characters, including:
 
@@ -289,20 +289,6 @@ Use a different email address or log in with the existing account.
 Email: admin@storerating.com
 Password: Admin@1234
 ```
-
----
-
-## 📋 Validation Rules
-
-| Field    | Validation                                        |
-| -------- | ------------------------------------------------- |
-| Name     | 20–60 characters                                  |
-| Address  | Max 400 characters                                |
-| Email    | Valid email format                                |
-| Password | 8–16 characters, 1 uppercase, 1 special character |
-
-Validations are enforced on both frontend and backend.
-
 ---
 
 ## 🔗 API Endpoints
@@ -360,14 +346,6 @@ Validations are enforced on both frontend and backend.
 * Review comments
 * Admin analytics charts
 * Docker deployment
-
----
-
-## 👩‍💻 Author
-
-**Shreya Mohite**
-
-GitHub: https://github.com/ShreyaMohite1117
 
 ---
 
