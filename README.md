@@ -4,23 +4,27 @@ A full-stack web application where users discover and rate stores. Built for the
 FullStack Intern Coding Challenge.
 
 🚀 Features
+
 Authentication & Authorization
 JWT-based authentication
 Role-based access control
 Secure password hashing using bcrypt
 Update password functionality
+
 👨‍💼 Admin
 Dashboard with analytics
 Manage users (Admin / User / Store Owner)
 Create and manage stores
 View store ratings
 Search, filter, and sort users/stores
+
 👤 Normal User
 Register and login
 Browse stores
 Search stores by name and address
 Submit ratings (1-5 stars)
 Update existing ratings
+
 🏪 Store Owner
 Login and manage store dashboard
 View average store rating
