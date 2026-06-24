@@ -37,6 +37,18 @@ A full-stack web application where users can discover, rate, and review stores. 
 * Track store performance
 
 ---
+## 📸 Screenshots
+
+### Login Page
+![Login](./screenshots/login.png)
+
+### Admin Dashboard
+![Admin Dashboard](./screenshots/admin-dashboard.png)
+
+### Store Management
+![Stores](./screenshots/stores.png)
+
+---
 
 ## 🛠️ Tech Stack
 
