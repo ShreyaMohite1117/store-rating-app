@@ -173,6 +173,113 @@ Frontend runs on:
 ```bash
 http://localhost:5173
 ```
+## 🎯 Try It Out
+
+1. Log in using the default admin credentials created by the seed script, or register a new account through the Sign Up page.
+2. As an **Administrator**:
+
+   * Navigate to **Users → Add User** to create a Store Owner account.
+   * Navigate to **Stores → Add Store** to register a store and assign an owner.
+3. As a **Normal User**:
+
+   * Browse available stores.
+   * Search stores by name or address.
+   * Submit a rating between 1–5 stars.
+   * Update an existing rating at any time.
+4. As a **Store Owner**:
+
+   * Access the Owner Dashboard.
+   * View the store's average rating.
+   * See the list of users who have submitted ratings.
+5. Any authenticated user can update their password from the **Update Password** page.
+
+---
+
+## 👥 User Roles & Permissions
+
+| Role              | Permissions                                                                                                                                         |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Administrator** | View platform statistics, manage users, create stores, assign store owners, search/filter records, sort tables, and view detailed user information. |
+| **Normal User**   | Register, log in, browse stores, search stores, submit ratings, update ratings, change password, and log out.                                       |
+| **Store Owner**   | Log in, view store rating analytics, see users who rated their store, change password, and log out.                                                 |
+
+---
+
+## ✅ Form Validation Rules
+
+### User Validation
+
+* **Name:** 20–60 characters
+* **Address:** Maximum 400 characters
+* **Email:** Valid email format
+* **Password:** 8–16 characters, including:
+
+  * At least one uppercase letter
+  * At least one special character
+
+### Rating Validation
+
+* Rating value must be between **1 and 5 stars**
+
+All validations are enforced on both the frontend and backend to ensure data integrity and security.
+
+---
+
+## 🔌 API Endpoints
+
+All API routes are prefixed with `/api`.
+
+| Method | Endpoint                  | Access        | Description                           |
+| ------ | ------------------------- | ------------- | ------------------------------------- |
+| POST   | `/auth/signup`            | Public        | Register a new user                   |
+| POST   | `/auth/login`             | Public        | Login for all roles                   |
+| PUT    | `/auth/update-password`   | Authenticated | Update password                       |
+| GET    | `/admin/dashboard`        | Admin         | Dashboard statistics                  |
+| POST   | `/admin/users`            | Admin         | Create user                           |
+| GET    | `/admin/users`            | Admin         | List users with filtering and sorting |
+| GET    | `/admin/users/:id`        | Admin         | Get user details                      |
+| POST   | `/admin/stores`           | Admin         | Create store                          |
+| GET    | `/admin/stores`           | Admin         | List stores with ratings              |
+| GET    | `/stores`                 | User          | Browse and search stores              |
+| POST   | `/stores/:storeId/rating` | User          | Create or update rating               |
+| GET    | `/owner/dashboard`        | Store Owner   | Store analytics dashboard             |
+
+---
+
+## 🔒 Security & Architecture
+
+* Passwords are securely hashed using **bcrypt** before storage.
+* Authentication is handled through **JWT (JSON Web Tokens)**.
+* Protected routes use authentication and role-based authorization middleware.
+* Ratings enforce a unique **(user_id, store_id)** constraint, ensuring a user can rate a store only once while still allowing updates.
+* Database schema follows normalization principles with indexes and constraints for performance and consistency.
+
+---
+
+## 🛠 Troubleshooting
+
+### Database Connection Issues
+
+If the backend fails to connect to PostgreSQL:
+
+* Ensure PostgreSQL service is running.
+* Verify database credentials inside the `.env` file.
+* Confirm that the database `store_rating_db` exists.
+
+### Frontend API Errors
+
+If API requests fail:
+
+* Start the backend server before the frontend.
+* Verify the backend is running on `http://localhost:5000`.
+
+### Duplicate Email Error
+
+If you receive:
+
+`An account with this email already exists`
+
+Use a different email address or log in with the existing account.
 
 ---
 
