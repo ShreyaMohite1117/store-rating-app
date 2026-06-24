@@ -6,29 +6,29 @@ FullStack Intern Coding Challenge.
 🚀 Features
 
 Authentication & Authorization
-JWT-based authentication
-Role-based access control
-Secure password hashing using bcrypt
-Update password functionality
+-JWT-based authentication
+-Role-based access control
+-Secure password hashing using bcrypt
+-Update password functionality
 
 👨‍💼 Admin
-Dashboard with analytics
-Manage users (Admin / User / Store Owner)
-Create and manage stores
-View store ratings
-Search, filter, and sort users/stores
+-Dashboard with analytics
+-Manage users (Admin / User / Store Owner)
+-Create and manage stores
+-View store ratings
+-Search, filter, and sort users/stores
 
 👤 Normal User
-Register and login
-Browse stores
-Search stores by name and address
-Submit ratings (1-5 stars)
-Update existing ratings
+-Register and login
+-Browse stores
+-Search stores by name and address
+-Submit ratings (1-5 stars)
+-Update existing ratings
 
 🏪 Store Owner
-Login and manage store dashboard
-View average store rating
-View users who rated the store
+-Login and manage store dashboard
+-View average store rating
+-View users who rated the store
 
 🛠 Tech Stack
 - **Backend:** Node.js + Express.js
