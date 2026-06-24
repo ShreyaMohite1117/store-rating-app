@@ -40,13 +40,22 @@ A full-stack web application where users can discover, rate, and review stores. 
 ## 📸 Screenshots
 
 ### Login Page
-![Login](./screenshots/login.png)
+<img width="1355" height="717" alt="login" src="https://github.com/user-attachments/assets/4813d147-5c9c-4867-bbdd-abbbc6d6f019" />
 
-### Admin Dashboard
-![Admin Dashboard](./screenshots/admin-dashboard.png)
+### Signup Page
+<img width="1363" height="722" alt="signup" src="https://github.com/user-attachments/assets/6811efcd-9da9-4fd0-91f7-5e2191348baf" />
 
-### Store Management
-![Stores](./screenshots/stores.png)
+### Dashboard
+<img width="1359" height="711" alt="dashboard" src="https://github.com/user-attachments/assets/1d4178a5-e25a-45ec-a32c-582f04a6e057" />
+
+### Stores management 
+<img width="1363" height="711" alt="stores" src="https://github.com/user-attachments/assets/f8eb428e-e904-4b04-9d07-b1f50b6e7472" />
+
+### Add Stores  
+<img width="1365" height="717" alt="add_store" src="https://github.com/user-attachments/assets/98c8b32a-c868-45ac-bda8-d53986fb3832" />
+
+### Add Users
+<img width="1365" height="713" alt="add_user" src="https://github.com/user-attachments/assets/d60fd522-2d97-4a2f-a3be-48382cdd5006" />
 
 ---
 
